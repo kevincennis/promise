@@ -1,0 +1,4 @@
+node_modules
+*.sizecache.json
+dist
+.DS_Store

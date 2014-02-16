@@ -1,0 +1,29 @@
+{
+  "name": "promise",
+  "version": "0.0.0",
+  "description": "ES6 Promise shim",
+  "main": "Gruntfile.js",
+  "homepage": "kevvv.in",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Kevin Ennis",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.2.6",
+    "grunt-contrib-jshint": "~0.7.1",
+    "grunt-cli": "~0.1.9",
+    "grunt-lintspaces": "~0.2.202",
+    "grunt-compare-size": "~0.4.0-rc.3",
+    "gzip-js": "~0.3.2",
+    "load-grunt-tasks": "~0.2.0",
+    "jshint-stylish": "~0.1.3",
+    "promises-aplus-tests": "*",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-mocha-test": "~0.9.0"
+  }
+}
