@@ -1,4 +1,4 @@
-(function( exports ) {
+(function( global ) {
 
   'use strict';
 
@@ -749,6 +749,10 @@
   }
 
   // export the Promise constructor
-  exports.Promise = Promise;
+  if ( typeof module === 'object' && typeof module.exports === 'object' ) {
+    module.exports = Promise;
+  } else {
+    global.Promise = Promise;
+  }
 
-}(typeof exports === 'undefined' ? this : exports));
+}(this));

@@ -1,4 +1,4 @@
-var Promise = require('../dist/promise.min').Promise,
+var Promise = require('../dist/promise.min'),
   assert = require('assert');
 
 // es6 promise tests from https://raw.github.com/jakearchibald/es6-promise

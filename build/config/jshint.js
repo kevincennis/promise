@@ -58,7 +58,7 @@ module.exports = {
       ]
     },
     options: {
-      // allow browser globals
+      // allow node globals
       node: true,
       // don't allow use of undefined vars
       undef: true,
