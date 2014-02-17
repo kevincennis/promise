@@ -1,14 +1,15 @@
 {
   "name": "promise",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "ES6 Promise shim",
   "main": "Gruntfile.js",
-  "homepage": "kevvv.in",
+  "homepage": "https://github.com/kevincennis/promise",
   "scripts": {
     "test": "grunt"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git@github.com:kevincennis/promise.git"
   },
   "author": "Kevin Ennis",
   "devDependencies": {
