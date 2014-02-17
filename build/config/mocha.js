@@ -1,6 +1,6 @@
 module.exports = {
   test: {
-    src: ['test/tests.js'],
+    src: ['test/testrunner.js'],
     options: {
       reporter: 'spec'
     }
