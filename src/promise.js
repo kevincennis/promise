@@ -29,8 +29,7 @@
     if ( number === 0 || number === Infinity || number === -Infinity ) {
       return number;
     }
-    return number !== number || number === 0 ? 0 :
-      ( number >= 0 ? 1 : -1 ) * Math.floor(Math.abs(number));
+    return ( number >= 0 ? 1 : -1 ) * Math.floor(Math.abs(number));
   }
 
   // 7.1.12 ToString
