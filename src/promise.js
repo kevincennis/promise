@@ -29,7 +29,7 @@
         return 'number';
       default:
         if ( x === null ) {
-          return null;
+          return 'null';
         }
         if ( typeof Symbol === 'function' && x instanceof Symbol ) {
           return 'symbol';
