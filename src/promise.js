@@ -154,7 +154,7 @@
   // 8.4.1 EnqueueTask ( queueName, task, arguments)
   // not a real shim, but good enough
   function EnqueueTask ( task, args ) {
-    if ( typeof setImmediate !== 'undefined' ) {
+    if ( typeof setImmediate === 'function' ) {
       setImmediate(function() {
         task.apply(null, args);
       });
