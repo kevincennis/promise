@@ -1,4 +1,5 @@
 # promise
+[![travis](https://api.travis-ci.org/kevincennis/promise.png)](https://travis-ci.org/kevincennis/promise)
 
 ### ES6 Promise shim.
 
