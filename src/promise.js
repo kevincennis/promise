@@ -150,9 +150,8 @@
 
   // 7.4.5 IteratorStep ( iterator )
   function IteratorStep ( iterator ) {
-    var result = IteratorNext(iterator),
-      done = IteratorComplete(result);
-    return done === true ? false : result;
+    var result = IteratorNext(iterator);
+    return IteratorComplete(result) === true ? false : result;
   }
 
   // 7.4.6 CreateIterResultObject ( value, done )
