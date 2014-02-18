@@ -134,12 +134,10 @@
 
   // 7.4.3 IteratorComplete ( iterResult )
   function IteratorComplete ( iterResult ) {
-    var done;
     if ( Type(iterResult) !== 'object' ) {
       throw TypeError();
     }
-    done = iterResult.done;
-    return Boolean(done);
+    return Boolean(iterResult.done);
   }
 
   // 7.4.4 IteratorValue ( iterResult )
