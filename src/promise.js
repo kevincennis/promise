@@ -69,8 +69,6 @@
       case 'string':
         return String(argument);
       default:
-      case 'object':
-      case 'function':
         return argument;
     }
   }
