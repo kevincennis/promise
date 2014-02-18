@@ -20,13 +20,10 @@
   function Type ( x ) {
     switch ( typeof x ) {
       case 'undefined':
-        return 'undefined';
       case 'boolean':
-        return 'boolean';
       case 'string':
-        return 'string';
       case 'number':
-        return 'number';
+        return typeof x;
       default:
         if ( x === null ) {
           return 'null';
