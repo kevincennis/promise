@@ -129,12 +129,10 @@
 
   // 7.4.3 IteratorComplete ( iterResult )
   function IteratorComplete ( iterResult ) {
-    var done;
     if ( Type(iterResult) !== 'object' ) {
       throw TypeError();
     }
-    done = iterResult.done;
-    return Boolean(done);
+    return Boolean(iterResult.done);
   }
 
   // 7.4.4 IteratorValue ( iterResult )
@@ -147,9 +145,8 @@
 
   // 7.4.5 IteratorStep ( iterator )
   function IteratorStep ( iterator ) {
-    var result = IteratorNext(iterator),
-      done = IteratorComplete(result);
-    return done === true ? false : result;
+    var result = IteratorNext(iterator);
+    return IteratorComplete(result) === true ? false : result;
   }
 
   // 7.4.6 CreateIterResultObject ( value, done )
