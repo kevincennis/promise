@@ -20,13 +20,10 @@
   function Type ( x ) {
     switch ( typeof x ) {
       case 'undefined':
-        return 'undefined';
       case 'boolean':
-        return 'boolean';
       case 'string':
-        return 'string';
       case 'number':
-        return 'number';
+        return typeof x;
       default:
         if ( x === null ) {
           return 'null';
@@ -66,14 +63,10 @@
     }
     switch ( typeof argument ) {
       case 'boolean':
-        return Boolean(argument);
       case 'number':
-        return Number(argument);
       case 'string':
-        return String(argument);
+        return Object(argument);
       default:
-      case 'object':
-      case 'function':
         return argument;
     }
   }
@@ -112,9 +105,6 @@
   // this is an ES6 abstract operation, and it's not really
   // possible in JS, but this should be good enough
   function IsConstructor ( obj ) {
-    if ( /Constructor/.test(Object.prototype.toString.call(obj)) ) {
-      return true;
-    }
     return typeof obj === 'function';
   }
 
