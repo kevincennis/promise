@@ -1,0 +1,15 @@
+{
+  "name": "promisejs",
+  "version": "0.0.1",
+  "main": "promise.js",
+  "ignore": [
+    "build",
+    "src",
+    "test",
+    ".gitignore",
+    ".travis.yml",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ]
+}
