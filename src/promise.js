@@ -4,6 +4,11 @@
 
   var $$iterator, ArrayIteratorPrototype;
 
+  // don't trample native promises if they exist
+  if ( 'Promise' in global && typeof global.Promise.all === 'function' ) {
+    return;
+  }
+
   // set a value as non-configurable and non-enumerable
   function defineInternal ( obj, key, val ) {
     Object.defineProperty(obj, key, {
