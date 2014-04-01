@@ -1,10 +1,10 @@
 module.exports = {
   build: {
-    src: 'src/<%= pkg.name %>.js',
-    dest: 'dist/<%= pkg.name %>.js'
+    src: 'src/promise.js',
+    dest: 'dist/promise.js'
   },
   main: {
-    src: 'dist/<%= pkg.name %>.js',
-    dest: '<%= pkg.name %>.js'
+    src: 'dist/promise.js',
+    dest: 'promise.js'
   }
 };

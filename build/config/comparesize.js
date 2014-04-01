@@ -1,7 +1,7 @@
 module.exports = {
   files: [
-    'dist/<%= pkg.name %>.js',
-    'dist/<%= pkg.name %>.min.js'
+    'dist/promise.js',
+    'dist/promise.min.js'
   ],
   options: {
     cache: 'build/.sizecache.json',

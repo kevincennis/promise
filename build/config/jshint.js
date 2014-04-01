@@ -88,7 +88,7 @@ module.exports = {
   // didn't leak any variables or try to use anything that's undefined
   dist: {
     files: {
-      src: ['dist/<%= pkg.name %>.js']
+      src: ['dist/promise.js']
     },
     options: {
       // allow browser globals
