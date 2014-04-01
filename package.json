@@ -2,7 +2,13 @@
   "name": "promise",
   "version": "0.0.3",
   "description": "ES6 Promise shim",
-  "main": "Gruntfile.js",
+  "main": "promise.js",
+  "keywords": [
+    "promises",
+    "promise",
+    "shim",
+    "es6"
+  ],
   "homepage": "https://github.com/kevincennis/promise",
   "scripts": {
     "test": "grunt"
@@ -11,7 +17,17 @@
     "type": "git",
     "url": "git@github.com:kevincennis/promise.git"
   },
-  "author": "Kevin Ennis",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/kevincennis/promise/LICENSE"
+    }
+  ],
+  "files": [
+    "promise.js",
+    "LICENSE"
+  ],
+  "author": "Kevin Ennis <kennis84@gmail.com>",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",
