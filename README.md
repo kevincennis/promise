@@ -23,7 +23,7 @@ or
 bower install promise-js
 ```
 
-Current version: 0.0.4
+Current version: 0.0.5
 
 ---
 
