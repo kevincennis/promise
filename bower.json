@@ -1,6 +1,6 @@
 {
-  "name": "promisejs",
-  "version": "0.0.3",
+  "name": "promise-js",
+  "version": "0.0.4",
   "main": "promise.js",
   "ignore": [
     "build",

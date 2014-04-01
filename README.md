@@ -13,6 +13,20 @@ promise
 100% compliant [Promises/A+ implementation](https://github.com/promises-aplus/promises-spec),
 and as close as possible to the [ES6 Spec](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects).
 
+```
+npm install promise-js
+```
+
+or
+
+```
+bower install promise-js
+```
+
+Current version: 0.0.4
+
+---
+
 Tests borrowed from:
 
 https://github.com/promises-aplus/promises-tests/
