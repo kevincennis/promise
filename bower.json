@@ -1,11 +1,13 @@
 {
   "name": "promisejs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "promise.js",
   "ignore": [
     "build",
     "src",
     "test",
+    "bower.json",
+    "Gruntfile.js",
     ".gitignore",
     ".travis.yml",
     "LICENSE",
