@@ -1,8 +1,9 @@
 module.exports = [
-  'copy',
+  'copy:build',
   'lintspaces',
   'jshint',
   'uglify',
   'mochaTest',
-  'compare_size'
+  'compare_size',
+  'copy:main'
 ];
