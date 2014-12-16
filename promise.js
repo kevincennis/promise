@@ -187,13 +187,13 @@
   }
 
   // 22.1.3.29 Array.prototype.values ( )
-  Array.prototype.values = function () {
+  defineInternal( Array.prototype, 'values', function () {
     var O = ToObject(this);
     return CreateArrayIterator(O, 'value');
-  };
+  });
 
   // 22.1.3.30 Array.prototype [ @@iterator ] ( )
-  Array.prototype[$$iterator] = Array.prototype.values;
+  defineInternal( Array.prototype, $$iterator, Array.prototype.values );
 
   // 22.1.5.2 The %ArrayIteratorPrototype% Object
   ArrayIteratorPrototype = {};
