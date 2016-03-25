@@ -19,6 +19,16 @@
     });
   }
 
+  // set a value as configurable and non-enumerable
+  function defineConfigurable ( obj, key, val ) {
+    Object.defineProperty(obj, key, {
+      configurable: true,
+      enumerable: false,
+      writable: true,
+      value: val
+    });
+  }
+
   // From the ES6 spec (http://people.mozilla.org/~jorendorff/es6-draft.html)
 
   // 6 ECMAScript Data Types and Values
@@ -187,13 +197,17 @@
   }
 
   // 22.1.3.29 Array.prototype.values ( )
-  defineInternal( Array.prototype, 'values', function () {
-    var O = ToObject(this);
-    return CreateArrayIterator(O, 'value');
-  });
+  if ( typeof Array.prototype.values !== 'function' ) {
+    defineConfigurable( Array.prototype, 'values', function values() {
+      var O = ToObject(this);
+      return CreateArrayIterator(O, 'value');
+    });
+  }
 
   // 22.1.3.30 Array.prototype [ @@iterator ] ( )
-  defineInternal( Array.prototype, $$iterator, Array.prototype.values );
+  if ( typeof Array.prototype[ $$iterator ] === 'undefined' ) {
+    defineConfigurable( Array.prototype, $$iterator, Array.prototype.values );
+  }
 
   // 22.1.5.2 The %ArrayIteratorPrototype% Object
   ArrayIteratorPrototype = {};
