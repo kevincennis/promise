@@ -96,9 +96,7 @@ module.exports = {
       // allow node globals
       node: true,
       // don't allow use of undefined vars
-      undef: true,
-      // don't allow unused vars
-      unused: 'vars',
+      undef: false,
       // allow function hoisting
       '-W003': true,
       // use of `this` in strict mode on functions that aren't methods

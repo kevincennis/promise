@@ -6,6 +6,9 @@
 
   // don't trample native promises if they exist
   if ( 'Promise' in global && typeof global.Promise.all === 'function' ) {
+    if ( typeof module === 'object' && typeof module.exports === 'object' ) {
+      module.exports = global.Promise;
+    }
     return;
   }
 
@@ -782,4 +785,4 @@
     global.Promise = Promise;
   }
 
-}(this));
+}( typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : this ) ); //jshint ignore:line
